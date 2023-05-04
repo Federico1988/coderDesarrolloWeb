@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- Esto es lo primero que va en el html!!! - Le indica al navegador q tipo de doc va a esribir (html) -->
+<html lang="es">
+<head><!-- Parte privada del sitio -->
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con IE o Edge -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptacion a dispositivos moviles -->
+    <title>Pizzeria Superqueso</title> <!-- este es el titulo que se ve en la pestsaña del navegador-->
+    <!-- Favicon (imagen en la pestania del navegador) SIEMPRE EN EL HEAD!!! Y en todas las pags --> 
+    <link rel="shortcut icon" href="imagenes/ico_biblio.png" type="image/x-icon">
+</head>
+<body><!-- Contenido del sitio va a estar dentro del body -->
+    <!-- Etiqueta cerrada -->
+    <p> esto es un parrafo</p>
+
+    <!-- Etiqueta abierta -->
+    <hr><!--Esto es un comentario  atajo ALt+Shift+A-->
+
+    <!-- Etiquetas semánticas -->
+    <header id="arriba"> <!-- Encabezado -->
+        <nav> 
+            <!-- Menu de navegacion -->
+            <ul>
+                <li>Home</li> <!-- Se pueden anidar listas -->
+                <li>Musica</li>
+                <li>Galeria
+                    <ul>
+                        <li>Paisajes</li>
+                        <li>Personas</li>
+                    </ul>
+
+                </li>
+                <li>Sector Piano</li>
+                <li><a href="paginas/contacto.html" >Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Lista Ordenada -->
+    <ol> <!-- poner ol>li*5 "atajos de emmet para html5"--> 
+        <li></li>
+    </ol>
+    <ol>
+        <li>Paso 1:</li>
+        <li>Paso 2:</li>
+        <li>Paso 3: </li>
+        <li>Paso 4:</li>
+        <li>Paso 5:</li>
+    </ol>
+
+    </a>
+    <!-- Lista no ordenada -->
+    <ul>
+        <li><!-- List element --> </li>
+        <li>Fruta</li>
+        <li>Lacteos</li>
+    </ul>
+
+    <a href="https://www.google.com" target="_blank">Enlace Absoluto Google</a><!-- blank es para q lo abra en otra pestania -->
+    <a href="contacto.html"> Enlace relativo conacto</a>
+    <a href="#arriba">Volver arriba (Enlace interno)</a> <!-- El enlace # llega hasta donde esta la etiqueta arriba -->
+    <main>
+        <!-- Contenido principal -->
+        <img src="imagenes/biblioteca.JPG" alt="Biblioteca con musica y piano"><!-- Alt ese texto alternativo, por si la foto no camina. Tmb es para comandos por voz (a que hace ref la imagen) -->
+    </main>
+
+    <section>
+        <!-- seccion del contenido, puede ir dentro del main, depende de mi organizacion del sitio--> 
+        <article>
+            <!-- Subseccion del contenido -->
+            <h1>Titulo 1!!!</h1> <!-- Las h son para headings, los sizes lo manejamos con css -->
+            <h2>Titulo 2, hay hasta el 6</h2> <!-- los H son elementos de bloque, ocupan todo el ancho del navegador -->
+            <h3>Titulo 3</h3>
+            <h4>titulo 4</h4>
+            <h5>titulo 5</h5>
+            <h6>titulo 6</h6>
+            <p>parrafo 1</p><p>parrafo 2</p> <!-- tambien son de bloque -->
+
+            <!-- Elementos de linea -->
+            <a href="">enlace 1</a> <!-- Enlace -->
+            <a href="">encalceeee 2</a><!-- Enlace 2 mas largo -->
+        </article>
+    </section>
+    <section>
+        <h3>Prueba de video</h3>
+        <iframe width="1128" height="635" src="https://www.youtube.com/embed/HZvNQyT-KCc" title="La biblioteca" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+    <aside>
+        <!-- Publicidad o contenido secundario, que no afecta al cont de la pag -->
+    </aside>
+
+    <footer>
+        <!-- Pie de pagina -->
+    </footer>
+</body><!-- Despues de esto no va nada, directo el cierre de html -->
+</html>

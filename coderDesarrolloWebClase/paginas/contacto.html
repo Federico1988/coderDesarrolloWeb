@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - MyLabrary!</title>
+    <!-- Favicon (imagen en la pestania del navegador) SIEMPRE EN EL HEAD!!! Y en todas las pags --> 
+    <link rel="shortcut icon" href="../imagenes/ico_biblio.png" type="image/x-icon">
+</head>
+
+    <!-- Etiquetas semánticas -->
+    <header id="arriba"> <!-- Encabezado -->
+        <nav> 
+            <!-- Menu de navegacion -->
+            <ul>
+                <li><a href="../index.html">Home</a></li> <!-- Se pueden anidar listas -->
+                <li>Musica</li>
+                <li>Galeria
+                    <ul>
+                        <li>Paisajes</li>
+                        <li>Personas</li>
+                    </ul>
+
+                </li>
+                <li>Sector Piano</li>
+                <li><a href="contacto.html" >Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <h1>
+        Contacto pa' saber dnd estamos
+    </h1>
+    <form action=""> <!--Formulario  -->
+        <label for="nombre">Nombre:</label> <!-- For se relaciona con el nombre del elemento que vamos a agregar -->
+        <input type="text" name="nombre" id="nombre"> <!-- Para formularios nombre e ID se llaman igual. Aca va el mismo que puse en el for del label. Unir el label con el input correspondiente -->
+        <br>
+        <label for="email">Email</label><!-- br es solo por ahora. Luego no se puede usar -->
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="pwd">Password:</label> <!-- For se relaciona con el nombre del elemento que vamos a agregar -->
+        <input type="password" name="pwd" id="pwd">
+        <div><!-- Etiqueta de division. Es para encerrar el contenido pero no tiene valor semantico  Elemento de bloque!! se pone abajo (porque no es un elemento de linea) Crear secciones o agrupar contenido-->
+            <label for="msj">Deja tu mensaje:</label>
+            <textarea name="msj" id="msj" cols="40" rows="10"></textarea>
+        </div>
+        <!-- Radio UNA SOLA OPCION-->
+        <label for="gender">Genero: </label>
+        <input type="radio" name="gender" id="gender" value="M"> Masculino
+        <input type="radio" name="gender" id="gender" value="F"> Femenino
+        <input type="radio" name="gender" id="gender" value="O"> otro
+        <br>
+        <!-- CheckBox  para una o mas de una opciones-->
+        <label for="Terminos">Acepta terminos?</label>
+        <input type="checkbox" name="Terminos" id="Terminos">
+        
+        <label for="nws">NewsLetters?</label>
+        <input type="checkbox" name="nws" id="nws">
+        <br>
+        <!-- Menu Desplegable -->
+        <label for="pais">Seleccione el pais</label>
+        <select name="pais" id="pais">
+            <option value="Arg">Argentina</option>
+            <option value="Uru">Uruguay</option>
+            <option value="Chi">Chile</option>
+        </select>
+        <br>
+        <!-- Conjunto de campo  Manera rapida que en el formulario dividamos un bloque-->
+        <fieldset>
+            <legend>Datos de facturacion</legend>
+            <label for="nombre">Nombre:</label> <!-- For se relaciona con el nombre del elemento que vamos a agregar -->
+            <input type="text" name="nombre" id="nombre" required placeholder="aca poner algo"> <!-- placeholder es para q te ponga en gris lo q va en el campo required Lo hace obligatorio -->
+        </fieldset>
+        <!-- Botones -->
+        <input type="button" value="Funcionar con Js">
+        <input type="reset" value="Resetear">
+        <input type="submit" value="Enviar formulario"> <!-- Se manda a traves de get. Solo con el label, ya se arma el mensaje. usa el label para armar este mensaje (nombre, email etc) -->
+
+
+
+    
+    </form>
+
+    
+</body>
+
+</html>
