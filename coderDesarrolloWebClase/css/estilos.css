@@ -11,7 +11,7 @@ body {
     background-image: url("../imagenes/ico_biblio.png");
     background-repeat: no-repeat;/* por default se repite la pag para llenar el espacio */
     background-position: center;
-    background-size:contain;
+    background-size:cover;
 }
 
 .letraAzul {
