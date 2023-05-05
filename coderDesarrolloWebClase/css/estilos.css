@@ -1,0 +1,48 @@
+/*Linkear uno solo en todas las paginas!!!! */
+/* Prioridad ID > CLASE > ETIQUETA */
+body {
+    /* Esto se lo aplica a todo el sitio porque lo mande al body */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#fondoRojo {
+    /* ID */
+    background-color: red;
+    background-image: url("../imagenes/ico_biblio.png");
+    background-repeat: no-repeat;/* por default se repite la pag para llenar el espacio */
+    background-position: center;
+    background-size:contain;
+}
+
+.letraAzul {
+    /* Clase */
+    color: rgba(180, 180, 211, 0.397);
+    /* Hover mouse para colorPicker */
+}
+
+.fondoGris {
+    background-color: grey;
+}
+
+h1 {
+    /*Etiqueta> le aplica a todos los h1!! si quiero exceptuar uno, le meto a ese en particular una clase*/
+    background-color: orange;
+    /* !Important -> Fuerza esto se fuerza esta declaracion */
+    font-family: Arial, Helvetica, sans-serif;
+    /* pone 3 porque si no las tiene va buscando las siguientes */
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    /* puede hacerse en html con etiqueta em (valor semantico) */
+    text-align: center;
+    text-decoration:line-through; /* propidad none me viene bien para sacar el subrayado a los enlaces */
+}
+a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: circle;
+}
