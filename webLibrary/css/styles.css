@@ -1,10 +1,23 @@
+
+
 header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
+     background-color: #160b33;
+ }
+
+#fondoHeader {
+    /* ID */
+    /* background-color: rgb(37, 29, 83); */
+    background-image: url("../imgs/keyboardBkgnd.jpg");
+    background-repeat: no-repeat;/* por default se repite la pag para llenar el espacio */
+    background-position: center;
+    background-size:cover;
+    padding-top: 5%;
 }
+
 
 header li {
     float: left;
@@ -17,10 +30,24 @@ header a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: block;
     text-align: center;
-    padding: 16px;
+    padding: 16px 80px; /* Todo improve this!!! */
+     width: 20%;
     text-decoration: none;
 }
 
 header a:hover {
-    background-color: #111111;
+    background-color: #33504b;
+}
+.header input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+  }
+#idxImage{
+
+  max-width: 100%;
+  height: auto;
 }
