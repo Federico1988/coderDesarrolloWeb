@@ -1,8 +1,30 @@
+
+/* RESETEO!! */
+*{/* Buena practica, para eliminar los margin y padding x default */
+    margin: 0;
+    padding: 0;
+}
+
+/* configuracion del html */
+html{
+    /* font-size: 100%; */ /* 100% viene por defecto */
+    font-size: 100%;
+}
+
+p{
+    font-size: 10px; /* 16px por defecto  esto no es necesario cambiarlo para el cambio de rem a 1rem=16px*/
+}
+
+/* 1rem=16px por defecto 
+poniendo el font en 62.5 resulta el rem=10px
+*/
+
 /*Linkear uno solo en todas las paginas!!!! */
 /* Prioridad ID > CLASE > ETIQUETA */
 body {
     /* Esto se lo aplica a todo el sitio porque lo mande al body */
     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito',sans-serif;
 }
 
 #fondoRojo {
@@ -30,12 +52,14 @@ h1 {
     /* !Important -> Fuerza esto se fuerza esta declaracion */
     font-family: Arial, Helvetica, sans-serif;
     /* pone 3 porque si no las tiene va buscando las siguientes */
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: 6rem;
     font-weight: bold;
     font-style: italic;
     /* puede hacerse en html con etiqueta em (valor semantico) */
     text-align: center;
     text-decoration:line-through; /* propidad none me viene bien para sacar el subrayado a los enlaces */
+    font-weight: 900; /* en la fuente equivale a la variable light black etc */
 }
 a{
     text-decoration: none;
@@ -45,4 +69,57 @@ a{
 
 ul {
     list-style-type: circle;
+}
+
+/* Tipografía local */
+/* @font-face {  Para usar una fuente que tengo instalada en la pc
+    font-family: "Mi fuente";
+    src: url("../fuente/mifuente.ttf");
+} */
+
+/* Tipografia web */
+
+/* 1er paso pegar links en el head  ojo usar link no usar insert*/
+/* 2do paso  si lo quiero en todo el site lo pongo en el body*/
+h3{
+    font-family: 'Nunito',sans-serif;
+    font-size: 50 rem;
+    display: inline; /* lo convierte a elemento de linea  inline-block es para cuando estan en linea poder tener las propiedade de bloque (margin y padding en todas las caras)*/
+}
+
+
+
+/* OVERFLOW  
+visible - hidden - scroll - auto*/
+
+
+/* MARGIN
+Espaciado externo */
+
+
+.size{
+    background-color:aliceblue;
+    width: 500px;
+    height: 300px;
+    overflow: auto; /* MANEJA QUE PASA CON EL TEXTO QUE SE PASA , esto va en el padre*/
+/* 
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 650px;
+    margin-left: 100px; */
+    /* margin: 50px 100px 50px 100px; */ /* Arriba derecha abajo izq (agujas de reloj emepzando por arriba */
+    margin: 50px 100px; /* arriba abajo, derecha izq porque son iguales */
+
+    padding: 50px 100px;
+
+    border-top: solid 9px black;
+    border-left: dotted 15px pink;
+
+
+}
+
+.size p{
+    color: brown;
+    font-size: 20px;
+    font-weight: 600;
 }
