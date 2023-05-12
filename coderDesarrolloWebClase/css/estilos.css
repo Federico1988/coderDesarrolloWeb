@@ -60,6 +60,16 @@ h1 {
     text-align: center;
     text-decoration:line-through; /* propidad none me viene bien para sacar el subrayado a los enlaces */
     font-weight: 900; /* en la fuente equivale a la variable light black etc */
+ 
+}
+
+.articlePadre{
+    height: 2000px;
+}
+
+.articlePadre h1{
+    position: sticky; /* Se mueve dentro del height del padre!!!! */
+    top:0px;
 }
 a{
     text-decoration: none;
@@ -118,8 +128,26 @@ Espaciado externo */
 
 }
 
+.posSticky{
+}
+
 .size p{
     color: brown;
     font-size: 20px;
     font-weight: 600;
+}
+
+.imagenes img{
+    height: 100px;
+    width: 100px;
+}
+
+.posicion{
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+
+}
+.galeria{
+    text-align: center;
 }
