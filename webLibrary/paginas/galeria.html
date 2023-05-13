@@ -36,6 +36,59 @@
         </nav>
     </header>
 
+    <article class="articleFromFotos">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis explicabo saepe, quis quae perspiciatis nisi
+            optio quisquam non dignissimos! Rem doloremque voluptates ex reprehenderit, suscipit, dolorum voluptatibus
+            iure nisi officiis amet quaerat corrupti voluptas unde id hic eveniet perspiciatis aut ab nam! Pariatur
+            delectus quia maiores possimus quas repellat laboriosam.</p>
+    </article>
+    <section class="pictures">
+        <h2>Personas</h2>
+        <div class="fotosDiv">
+            <img src="../imgs/gente/IMG_5457.JPG" alt="">
+            <img src="../imgs/gente/IMG_5524.JPG" alt="">
+            <img src="../imgs/gente/IMG_6566.JPG" alt="">
+            <img src="../imgs/gente/IMG_6571.JPG" alt="">
+            <img src="../imgs/gente/IMG_6928.JPG" alt="">
+            <img src="../imgs/gente/IMG_6985.JPG" alt="">
+        </article>
+
+        <h2>Lugares</h2>
+        <article class="fotosDiv">
+            <img src="../imgs/lugares/IMG_5279.JPG" alt="">
+            <img src="../imgs/lugares/IMG_5289.JPG" alt="">
+            <img src="../imgs/lugares/IMG_5291.JPG" alt="">
+            <img src="../imgs/lugares/IMG_5313.JPG" alt="">
+            <img src="../imgs/lugares/IMG_5346.JPG" alt="">
+            <img src="../imgs/lugares/IMG_5423.JPG" alt="">
+        </article>
+    </section>
+
+    <!-- 
+        <script>
+            var folder = "../imgs/"; // replace with the path to your folder
+            var gallery = document.getElementById("gallery");
+        
+            function loadImages() {
+              var xhr = new XMLHttpRequest();
+              xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                  var files = JSON.parse(xhr.responseText);
+                  for (var i = 0; i < files.length; i++) {
+                    var img = document.createElement("img");
+                    img.src = folder + "/" + files[i];
+                    img.alt = files[i];
+                    gallery.appendChild(img);
+                  }
+                }
+              };
+              xhr.open("GET", "get_files.php?dir=" + folder, true);
+              xhr.send();
+            }
+        
+            loadImages();
+          </script> -->
+
     <footer id="abajo">
         <p>Recorriendo mi biblioteca...</p>
     </footer>

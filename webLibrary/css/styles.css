@@ -4,8 +4,16 @@
     padding: 0;
 }
 
+/* configuracion del html */
+html{
+    /* 100% viene por defecto, 62.5% es para obtener 1rem=10px  */
+    font-size: 100%;
+}
+
+
 body {
     font-family: 'Rubik', sans-serif;
+    background-color: #e7e1e1;
 }
 
 header ul {
@@ -17,11 +25,8 @@ header ul {
 }
 
 #fondoHeader {
-    /* ID */
-    /* background-color: rgb(37, 29, 83); */
     background-image: url("../imgs/keyboardBkgnd.jpg");
     background-repeat: no-repeat;
-    /* por default se repite la pag para llenar el espacio */
     background-position: center;
     background-size: cover;
     padding-top: 5%;
@@ -37,7 +42,6 @@ header a {
     text-decoration: none;
     font-size: larger;
     font-weight: 500;
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     display: block;
     text-align: center;
     padding: 16px 40px;
@@ -60,4 +64,57 @@ header a:hover {
 #idxImage {
     width: 100%;
     height: auto;
+}
+
+h1 {
+    margin: 50px;
+}
+
+section {
+    text-align: center;
+}
+
+/* .textVideoRow {
+    margin: 50px;
+} */
+
+.textVideoRow p,
+iframe {
+    margin: 50px 50px;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.acercaDeSection p {
+    max-width: 30%;
+    text-align: justify;
+    font-weight: 300;
+    font-size: large;
+}
+
+ iframe, img {
+    display: inline-block;
+    width: 30%;
+    height: 400px;
+}
+
+.pictures h2{
+    position:sticky;
+    top: 0px;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.articleFromFotos{
+    padding: 50px;
+}
+
+.articleFromFotos p{
+    text-align: justify;
+    font-size: xx-large;
+}
+
+.fotosDiv img{
+    margin: 20px;
+
 }
