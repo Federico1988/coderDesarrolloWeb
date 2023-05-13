@@ -1,18 +1,20 @@
-
 /* RESETEO!! */
-*{/* Buena practica, para eliminar los margin y padding x default */
+* {
+    /* Buena practica, para eliminar los margin y padding x default */
     margin: 0;
     padding: 0;
 }
 
 /* configuracion del html */
-html{
-    /* font-size: 100%; */ /* 100% viene por defecto */
+html {
+    /* font-size: 100%; */
+    /* 100% viene por defecto */
     font-size: 100%;
 }
 
-p{
-    font-size: 10px; /* 16px por defecto  esto no es necesario cambiarlo para el cambio de rem a 1rem=16px*/
+p {
+    font-size: 10px;
+    /* 16px por defecto  esto no es necesario cambiarlo para el cambio de rem a 1rem=16px*/
 }
 
 /* 1rem=16px por defecto 
@@ -24,16 +26,17 @@ poniendo el font en 62.5 resulta el rem=10px
 body {
     /* Esto se lo aplica a todo el sitio porque lo mande al body */
     font-family: Arial, Helvetica, sans-serif;
-    font-family: 'Nunito',sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 #fondoRojo {
     /* ID */
     background-color: red;
     background-image: url("../imagenes/ico_biblio.png");
-    background-repeat: no-repeat;/* por default se repite la pag para llenar el espacio */
+    background-repeat: no-repeat;
+    /* por default se repite la pag para llenar el espacio */
     background-position: center;
-    background-size:cover;
+    background-size: cover;
 }
 
 .letraAzul {
@@ -58,20 +61,24 @@ h1 {
     font-style: italic;
     /* puede hacerse en html con etiqueta em (valor semantico) */
     text-align: center;
-    text-decoration:line-through; /* propidad none me viene bien para sacar el subrayado a los enlaces */
-    font-weight: 900; /* en la fuente equivale a la variable light black etc */
- 
+    text-decoration: line-through;
+    /* propidad none me viene bien para sacar el subrayado a los enlaces */
+    font-weight: 900;
+    /* en la fuente equivale a la variable light black etc */
+
 }
 
-.articlePadre{
+.articlePadre {
     height: 2000px;
 }
 
-.articlePadre h1{
-    position: sticky; /* Se mueve dentro del height del padre!!!! */
-    top:0px;
+.articlePadre h1 {
+    position: sticky;
+    /* Se mueve dentro del height del padre!!!! */
+    top: 0px;
 }
-a{
+
+a {
     text-decoration: none;
     color: brown;
     font-weight: bolder;
@@ -91,10 +98,11 @@ ul {
 
 /* 1er paso pegar links en el head  ojo usar link no usar insert*/
 /* 2do paso  si lo quiero en todo el site lo pongo en el body*/
-h3{
-    font-family: 'Nunito',sans-serif;
+h3 {
+    font-family: 'Nunito', sans-serif;
     font-size: 50 rem;
-    display: inline; /* lo convierte a elemento de linea  inline-block es para cuando estan en linea poder tener las propiedade de bloque (margin y padding en todas las caras)*/
+    display: inline;
+    /* lo convierte a elemento de linea  inline-block es para cuando estan en linea poder tener las propiedade de bloque (margin y padding en todas las caras)*/
 }
 
 
@@ -107,18 +115,21 @@ visible - hidden - scroll - auto*/
 Espaciado externo */
 
 
-.size{
-    background-color:aliceblue;
+.size {
+    background-color: aliceblue;
     width: 500px;
     height: 300px;
-    overflow: auto; /* MANEJA QUE PASA CON EL TEXTO QUE SE PASA , esto va en el padre*/
-/* 
+    overflow: auto;
+    /* MANEJA QUE PASA CON EL TEXTO QUE SE PASA , esto va en el padre*/
+    /* 
     margin-top: 50px;
     margin-right: 100px;
     margin-bottom: 650px;
     margin-left: 100px; */
-    /* margin: 50px 100px 50px 100px; */ /* Arriba derecha abajo izq (agujas de reloj emepzando por arriba */
-    margin: 50px 100px; /* arriba abajo, derecha izq porque son iguales */
+    /* margin: 50px 100px 50px 100px; */
+    /* Arriba derecha abajo izq (agujas de reloj emepzando por arriba */
+    margin: 50px 100px;
+    /* arriba abajo, derecha izq porque son iguales */
 
     padding: 50px 100px;
 
@@ -128,26 +139,26 @@ Espaciado externo */
 
 }
 
-.posSticky{
-}
+.posSticky {}
 
-.size p{
+.size p {
     color: brown;
     font-size: 20px;
     font-weight: 600;
 }
 
-.imagenes img{
+.imagenes img {
     height: 100px;
     width: 100px;
 }
 
-.posicion{
+.posicion {
     position: fixed;
-    bottom:10px;
+    bottom: 10px;
     right: 10px;
 
 }
-.galeria{
+
+.galeria {
     text-align: center;
 }

@@ -24,7 +24,7 @@ header ul {
     background-color: #160b33;
 }
 
-#fondoHeader {
+.fondoHeader {
     background-image: url("../imgs/keyboardBkgnd.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -117,4 +117,21 @@ iframe {
 .fotosDiv img{
     margin: 20px;
 
+}
+
+footer{
+    text-align: right;
+    
+    background-color: #160b33;
+}
+
+footer img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 3%;
+    margin-top: 20px;
+}
+
+footer p{
+    display: inline;
 }
