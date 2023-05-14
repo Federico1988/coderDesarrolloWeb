@@ -79,6 +79,14 @@ section {
     padding: 20px;
 }
 
+.floatingVideo{
+    position: fixed;
+    top: 120px;
+    right: 20px;
+    border-radius: 30px;
+
+}
+
 .formSection {
     text-align: left;
 }
