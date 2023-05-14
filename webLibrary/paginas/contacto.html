@@ -25,47 +25,47 @@
 <body>
     <header class="fondoHeader">
         <nav>
-            <ul>
+            <ul class="headerFooterColor">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="acercaDe.html">Acerca De</a></li>
                 <li><a href="galeria.html">Galería</a></li>
                 <li><a href="misInfluencias.html">Mis Influencias</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><input type="text" placeholder="Buscar..">></li>
+                <li><input type="search" placeholder="Buscar.."></li>
             </ul>
         </nav>
     </header>
-    <section>
 
-
-    </section>
-
-    <section>
+    <section class="formSection">
         <h1>CONTACTO</h1>
+        <form action="">
+            <div>
+                <label class="formLabel" for="name">Ingresá tu nombre:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label class="formLabel" for="email">Ingresá tu email:</label>
+                <input type="email" placeholder="email@domain.com" required name="email" id="email">
+            </div>
+            <div>
+                <label class="formLabel" for="comments">Dejame tus comentarios:</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div>
+            <div class="contentRight">
+                <!-- Botones -->
+                <input type="reset" value="Resetear">
+                <input type="submit" value="Enviar formulario">
+            </div>
+        </form>
+
     </section>
-    <!-- formulario de contacto -->
-
-    <section>
-        <label for="name">Ingresá tu nombre: </label>
-        <input type="text" name="name" id="name">
-        <br>
-        <label for="email">Ingresá tu email</label>
-        <input type="email" placeholder="email@domain.com" name="email" id="email">
-        <br>
-        <label for="comments">Dejame tus comentarios:</label>
-        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
 
 
-
-
-    </section>
-
-
-    <footer>
+    <footer class="contentRight headerFooterColor">
         <p><a href="https://www.facebook.com/"><img src="../imgs/socialNetworks/facebook.png"></a></p>
         <p><a href="https://www.youtube.com/"><img src="../imgs/socialNetworks/youtube.png"></a></p>
-        <p><a href="https://www.instagram.com/"><img src="../imgs/socialNetworks/instagram.png"></a></p>   
-</footer>
+        <p><a href="https://www.instagram.com/"><img src="../imgs/socialNetworks/instagram.png"></a></p>
+    </footer>
 </body>
 
 </html>

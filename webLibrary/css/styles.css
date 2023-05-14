@@ -5,7 +5,7 @@
 }
 
 /* configuracion del html */
-html{
+html {
     /* 100% viene por defecto, 62.5% es para obtener 1rem=10px  */
     font-size: 100%;
 }
@@ -16,12 +16,15 @@ body {
     background-color: #e7e1e1;
 }
 
+.headerFooterColor {
+    background-color: #160b33;
+}
+
 header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #160b33;
 }
 
 .fondoHeader {
@@ -32,9 +35,12 @@ header ul {
     padding-top: 5%;
 }
 
-
 header li {
     display: inline-block;
+}
+
+a {
+    font-size: 2rem;
 }
 
 header a {
@@ -52,13 +58,11 @@ header a:hover {
     background-color: #33504b;
 }
 
-.header input[type=text] {
-    float: right;
+header input[type=search] {
     padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
     border: none;
-    font-size: 17px;
+    font-size: larger;
+    font-weight: 600;
 }
 
 #idxImage {
@@ -67,62 +71,107 @@ header a:hover {
 }
 
 h1 {
+    font-size: 3.5rem;
     margin: 50px;
 }
 
 section {
-    text-align: center;
+    padding: 20px;
 }
 
-/* .textVideoRow {
-    margin: 50px;
-} */
+.formSection {
+    text-align: left;
+}
 
 .textVideoRow p,
 iframe {
     margin: 50px 50px;
-    vertical-align: middle;
-    display: inline-block
+    vertical-align: top;
+    display: inline-block;
+    height: 400px;
+}
+
+.acercaDeSection {
+    text-align: center;
 }
 
 .acercaDeSection p {
     max-width: 30%;
     text-align: justify;
-    font-weight: 300;
+    font-weight: bold;
     font-size: large;
 }
 
- iframe, img {
+iframe,
+img {
     display: inline-block;
     width: 30%;
-    height: 400px;
 }
 
-.pictures h2{
-    position:sticky;
-    top: 0px;
+.spotifyEmbedded iframe {
+    width: 20%;
+    margin: 10px;
+}
+
+h2 {
+
     font-weight: 400;
     font-size: 3rem;
 }
 
-.articleFromFotos{
+/* .pictures h2 {
+    position: sticky;
+    top: 0px;
+}
+ */
+.articleFromFotos {
     padding: 50px;
 }
 
-.articleFromFotos p{
+.articleFromFotos p {
     text-align: justify;
     font-size: xx-large;
 }
 
-.fotosDiv img{
+.fotosDiv img {
+    margin: 20px;
+}
+
+form {
+    margin: 50px;
+    text-align: left;
+    max-width: 650px;
+}
+
+form input,
+textarea {
+    padding: 5px;
+    font-size: large;
+    margin: 20px;
+}
+
+.formLabel {
+    display: inline-block;
+    width: 250px;
+    margin-bottom: 30px;
+    padding: 5px;
+    font-size: large;
     margin: 20px;
 
 }
 
-footer{
+.contentRight {
     text-align: right;
-    
-    background-color: #160b33;
+}
+
+.classlist {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    list-style: disc;
+}
+
+footer {
+    padding-bottom: 40px;
 }
 
 footer img {
@@ -132,6 +181,7 @@ footer img {
     margin-top: 20px;
 }
 
-footer p{
+footer p {
+    height: 70px;
     display: inline;
 }

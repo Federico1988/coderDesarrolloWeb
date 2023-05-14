@@ -25,13 +25,13 @@
 <body>
     <header class="fondoHeader">
         <nav>
-            <ul>
+            <ul class="headerFooterColor">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="acercaDe.html">Acerca De</a></li>
                 <li><a href="galeria.html">Galería</a></li>
                 <li><a href="misInfluencias.html">Mis Influencias</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><input type="text" placeholder="Buscar..">></li>
+                <li><input type="search" placeholder="Buscar.."></li>
             </ul>
         </nav>
     </header>
@@ -51,47 +51,22 @@
             <img src="../imgs/gente/IMG_6571.JPG" alt="">
             <img src="../imgs/gente/IMG_6928.JPG" alt="">
             <img src="../imgs/gente/IMG_6985.JPG" alt="">
-        </article>
+            </article>
 
-        <h2>Lugares</h2>
-        <article class="fotosDiv">
-            <img src="../imgs/lugares/IMG_5279.JPG" alt="">
-            <img src="../imgs/lugares/IMG_5289.JPG" alt="">
-            <img src="../imgs/lugares/IMG_5291.JPG" alt="">
-            <img src="../imgs/lugares/IMG_5313.JPG" alt="">
-            <img src="../imgs/lugares/IMG_5346.JPG" alt="">
-            <img src="../imgs/lugares/IMG_5423.JPG" alt="">
-        </article>
+            <h2>Lugares</h2>
+            <article class="fotosDiv">
+                <img src="../imgs/lugares/IMG_5279.JPG" alt="">
+                <img src="../imgs/lugares/IMG_5289.JPG" alt="">
+                <img src="../imgs/lugares/IMG_5291.JPG" alt="">
+                <img src="../imgs/lugares/IMG_5313.JPG" alt="">
+                <img src="../imgs/lugares/IMG_5346.JPG" alt="">
+                <img src="../imgs/lugares/IMG_5423.JPG" alt="">
+            </article>
     </section>
-
-    <!-- 
-        <script>
-            var folder = "../imgs/"; // replace with the path to your folder
-            var gallery = document.getElementById("gallery");
-        
-            function loadImages() {
-              var xhr = new XMLHttpRequest();
-              xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                  var files = JSON.parse(xhr.responseText);
-                  for (var i = 0; i < files.length; i++) {
-                    var img = document.createElement("img");
-                    img.src = folder + "/" + files[i];
-                    img.alt = files[i];
-                    gallery.appendChild(img);
-                  }
-                }
-              };
-              xhr.open("GET", "get_files.php?dir=" + folder, true);
-              xhr.send();
-            }
-        
-            loadImages();
-          </script> -->
-          <footer>
-            <p><a href="https://www.facebook.com/"><img src="../imgs/socialNetworks/facebook.png"></a></p>
-            <p><a href="https://www.youtube.com/"><img src="../imgs/socialNetworks/youtube.png"></a></p>
-            <p><a href="https://www.instagram.com/"><img src="../imgs/socialNetworks/instagram.png"></a></p>   
+    <footer class="contentRight headerFooterColor">
+        <p><a href="https://www.facebook.com/"><img src="../imgs/socialNetworks/facebook.png"></a></p>
+        <p><a href="https://www.youtube.com/"><img src="../imgs/socialNetworks/youtube.png"></a></p>
+        <p><a href="https://www.instagram.com/"><img src="../imgs/socialNetworks/instagram.png"></a></p>
     </footer>
 </body>
 
