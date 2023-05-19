@@ -79,7 +79,7 @@ section {
     padding: 20px;
 }
 
-.floatingVideo{
+.floatingVideo {
     position: fixed;
     top: 120px;
     right: 20px;
@@ -141,6 +141,116 @@ h2 {
     font-size: xx-large;
 }
 
+.fotosLugares {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: repeat(4, 300px);
+    grid-template-areas:
+        "foto1 foto1 foto2 foto3"
+        "foto1 foto1 foto4 foto3"
+        "foto5 foto6 foto7 foto3"
+        "foto5 foto8 foto8 foto3";
+
+
+}
+
+.paisaje1 {
+    grid-area: foto1;
+    background-image: url("../imgs/lugares/IMG_5279.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje1:hover {
+    transform: scale(1.2);
+}
+
+.paisaje2 {
+    grid-area: foto2;
+    background-image: url("../imgs/lugares/IMG_5289.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje2:hover {
+    transform: scale(1.2);
+}
+
+.paisaje3 {
+    grid-area: foto3;
+    background-image: url("../imgs/lugares/IMG_5346.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje3:hover {
+    transform: scale(1.2);
+}
+
+.paisaje4 {
+    grid-area: foto4;
+    background-image: url("../imgs/lugares/IMG_5313.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje4:hover {
+    transform: scale(1.2);
+}
+
+.paisaje5 {
+    grid-area: foto5;
+    background-image: url("../imgs/lugares/IMG_5504.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje5:hover {
+    transform: scale(1.2);
+}
+
+.paisaje6 {
+    grid-area: foto6;
+    background-image: url("../imgs/lugares/IMG_5291.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje6:hover {
+    transform: scale(1.2);
+}
+
+.paisaje7 {
+    grid-area: foto7;
+    background-image: url("../imgs/lugares/IMG_5423.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje7:hover {
+    transform: scale(1.2);
+}
+
+.paisaje8 {
+    grid-area: foto8;
+    background-image: url("../imgs/lugares/IMG_5365.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.paisaje8:hover {
+    transform: scale(1.2);
+}
+
 .fotosDiv img {
     margin: 20px;
 }
@@ -192,4 +302,22 @@ footer img {
 footer p {
     height: 70px;
     display: inline;
+}
+
+@media screen and (max-width:500px) {
+    .fotosLugares { /* Para celu (max 500px) acomodo las fotos en una sola columna */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,200px);
+        grid-gap: 10px;
+        grid-template-areas:
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+            "foto5"
+            "foto6"
+            "foto7"
+            "foto8";
+    }
+
 }
