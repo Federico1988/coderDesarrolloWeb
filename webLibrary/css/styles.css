@@ -3,6 +3,13 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --alabaster: #f1f2ebff;
+    --chocolate-cosmos: #561d25ff;
+    --caramel: #ce8147ff;
+    --polynesian-blue: #094d92ff;
+    --paynes-gray: #536271ff;
+  }
 
 /* configuracion del html */
 html {
@@ -13,11 +20,11 @@ html {
 
 body {
     font-family: 'Rubik', sans-serif;
-    background-color: #e7e1e1;
+    background-color:var(--alabaster);
 }
 
 .headerFooterColor {
-    background-color: #160b33;
+    background-color: var(--paynes-gray);
 }
 
 header ul {
@@ -44,7 +51,7 @@ a {
 }
 
 header a {
-    color: aliceblue;
+    color: var(--alabaster);
     text-decoration: none;
     font-size: larger;
     font-weight: 500;
@@ -55,7 +62,7 @@ header a {
 }
 
 header a:hover {
-    background-color: #33504b;
+    background-color: var(--chocolate-cosmos);
 }
 
 header input[type=search] {
@@ -144,6 +151,7 @@ h2 {
 .fotosLugares {
     padding: 20px;
     display: grid;
+    background-color: var(--caramel);
     grid-template-columns: repeat(3, 1fr) 2fr;
     grid-template-rows: repeat(4, 300px);
     grid-template-areas:
@@ -151,8 +159,7 @@ h2 {
         "foto1 foto1 foto4 foto3"
         "foto5 foto6 foto7 foto3"
         "foto5 foto8 foto8 foto3";
-
-
+    grid-gap: 5px;
 }
 
 .paisaje1 {
@@ -305,9 +312,10 @@ footer p {
 }
 
 @media screen and (max-width:500px) {
-    .fotosLugares { /* Para celu (max 500px) acomodo las fotos en una sola columna */
+    .fotosLugares {
+        /* Para celu (max 500px) acomodo las fotos en una sola columna */
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(8,200px);
+        grid-template-rows: repeat(8, 200px);
         grid-gap: 10px;
         grid-template-areas:
             "foto1"
