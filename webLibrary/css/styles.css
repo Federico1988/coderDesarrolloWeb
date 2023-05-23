@@ -164,7 +164,7 @@ h2 {
 
 .paisaje1 {
     grid-area: foto1;
-    background-image: url("../imgs/lugares/IMG_5279.JPG");
+    background-image: url("../imgs/lugares/img_5279.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .3s;
@@ -176,7 +176,7 @@ h2 {
 
 .paisaje2 {
     grid-area: foto2;
-    background-image: url("../imgs/lugares/IMG_5289.JPG");
+    background-image: url("../imgs/lugares/img_5289.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .3s;
@@ -188,7 +188,7 @@ h2 {
 
 .paisaje3 {
     grid-area: foto3;
-    background-image: url("../imgs/lugares/IMG_5346.JPG");
+    background-image: url("../imgs/lugares/img_5346.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .3s;
@@ -200,7 +200,7 @@ h2 {
 
 .paisaje4 {
     grid-area: foto4;
-    background-image: url("../imgs/lugares/IMG_5313.JPG");
+    background-image: url("../imgs/lugares/img_5313.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .3s;
@@ -212,7 +212,7 @@ h2 {
 
 .paisaje5 {
     grid-area: foto5;
-    background-image: url("../imgs/lugares/IMG_5504.JPG");
+    background-image: url("../imgs/lugares/img_5504.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .3s;
@@ -224,7 +224,7 @@ h2 {
 
 .paisaje6 {
     grid-area: foto6;
-    background-image: url("../imgs/lugares/IMG_5291.JPG");
+    background-image: url("../imgs/lugares/img_5291.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .3s;
@@ -236,7 +236,7 @@ h2 {
 
 .paisaje7 {
     grid-area: foto7;
-    background-image: url("../imgs/lugares/IMG_5423.JPG");
+    background-image: url("../imgs/lugares/img_5423.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .3s;
@@ -248,7 +248,7 @@ h2 {
 
 .paisaje8 {
     grid-area: foto8;
-    background-image: url("../imgs/lugares/IMG_5365.JPG");
+    background-image: url("../imgs/lugares/img_5365.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .3s;
