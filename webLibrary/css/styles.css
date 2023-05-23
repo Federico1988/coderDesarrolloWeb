@@ -311,6 +311,13 @@ footer p {
     display: inline;
 }
 
+.spotifyIframe{
+    border-radius:12px;
+    width:"20%";
+    height:"352";
+    box-shadow: 0 5px 20px var(--caramel);
+}
+
 @media screen and (max-width:500px) {
     .fotosLugares {
         /* Para celu (max 500px) acomodo las fotos en una sola columna */
