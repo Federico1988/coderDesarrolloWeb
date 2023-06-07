@@ -3,13 +3,14 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --alabaster: #f1f2ebff;
     --chocolate-cosmos: #561d25ff;
     --caramel: #ce8147ff;
     --polynesian-blue: #094d92ff;
     --paynes-gray: #536271ff;
-  }
+}
 
 /* configuracion del html */
 html {
@@ -20,7 +21,7 @@ html {
 
 body {
     font-family: 'Rubik', sans-serif;
-    background-color:var(--alabaster);
+    background-color: var(--alabaster);
 }
 
 .headerFooterColor {
@@ -98,13 +99,17 @@ section {
     text-align: left;
 }
 
-.textVideoRow p,
+.justifyText {
+    text-align: justify;
+}
+
+/* .textVideoRow p,
 iframe {
     margin: 50px 50px;
     vertical-align: top;
     display: inline-block;
     height: 400px;
-}
+} */
 
 .acercaDeSection {
     text-align: center;
@@ -117,11 +122,11 @@ iframe {
     font-size: large;
 }
 
-iframe,
+/* iframe,
 img {
     display: inline-block;
     width: 30%;
-}
+} */
 
 .spotifyEmbedded iframe {
     width: 20%;
@@ -311,10 +316,10 @@ footer p {
     display: inline;
 }
 
-.spotifyIframe{
-    border-radius:12px;
-    width:"20%";
-    height:"352";
+.spotifyIframe {
+    border-radius: 12px;
+    width: "20%";
+    height: "352";
     box-shadow: 0 5px 20px var(--caramel);
 }
 

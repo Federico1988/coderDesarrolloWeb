@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca FC</title>
+    <!-- Bootstrap  (poner este antes que los mios)-->
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
     <!-- Insertar archivo CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,35 +40,43 @@
     <main>
         <h1>Interpretaciones Personales en Piano.</h1>
 
-        <section class="acercaDeSection">
+        <div class="container">
             <!-- USAR GRIDS PARA DESPARRAMAR MEJOR ESTO!!! y también va a servir para mobile -->
-            <div class="textVideoRow">
-                <p>Este video muestra mi interpretación del primer movimiento de "Moonlight Sonata" de Beethoven. Esta
-                    pieza ha sido una fuente constante de inspiración para mí como intérprete. La emotividad y belleza
-                    de esta composición me han cautivado desde el primer momento en que la escuché. Cada nota, cada
-                    frase musical, transmite una profunda expresión y un sentido de melancolía que resuena en mi
-                    corazón. A través de esta obra maestra, puedo explorar la capacidad del piano para transmitir
-                    emociones y contar historias sin palabras. Espero que disfruten de esta interpretación y que sientan
-                    la misma conexión que yo siento con esta magnífica pieza musical.</p>
-
-                <iframe src="https://www.youtube.com/embed/BfqgMDE1z0w" title="" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+            <div class="row">
+                <div class="col col-md-6 col-xs-12 ">
+                    <p class="justifyText">
+                        Este video muestra mi interpretación del primer movimiento de "Moonlight
+                        Sonata" de Beethoven.
+                        Esta
+                        pieza ha sido una fuente constante de inspiración para mí como intérprete. La emotividad y
+                        belleza
+                        de esta composición me han cautivado desde el primer momento en que la escuché. Cada nota, cada
+                        frase musical, transmite una profunda expresión y un sentido de melancolía que resuena en mi
+                        corazón. A través de esta obra maestra, puedo explorar la capacidad del piano para transmitir
+                        emociones y contar historias sin palabras. Espero que disfruten de esta interpretación y que
+                        sientan
+                        la misma conexión que yo siento con esta magnífica pieza musical.</p>
+                </div>
+                <div class="col col-md-6 col-xs-12">
+                    <iframe src="https://www.youtube.com/embed/BfqgMDE1z0w" title="" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
             </div>
 
-            <div class="textVideoRow">
+            <div class="row">
                 <iframe src="https://www.youtube.com/embed/SBDJmJ2xLnQ" title="Canon in D" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
 
-                <p>En este video, les presento mi interpretación de un arreglo para piano del famoso "Canon" de
+                <p class="justifyText">En este video, les presento mi interpretación de un arreglo para piano del famoso "Canon" de
                     Pachelbel en Re mayor. Esta composición icónica ha cautivado a oyentes de todo el mundo con su
                     belleza y armonía atemporales. El flujo continuo de las voces entrelazadas crea una sensación de
                     serenidad y paz interior. Interpretar esta pieza me llena de alegría y me permite explorar la
                     delicadeza y la gracia del piano. Espero que disfruten de esta versión y que experimenten la magia
                     de este maravilloso canon.</p>
             </div>
-        </section>
+            </section>
     </main>
 
 
@@ -76,5 +86,7 @@
         <p><a href="https://www.instagram.com/"><img src="../imgs/socialNetworks/instagram.png"></a></p>
     </footer>
 </body>
+<!-- Script JS de bootsrap -->
+<script src="js/bootstrap.min.js"></script>
 
 </html>
