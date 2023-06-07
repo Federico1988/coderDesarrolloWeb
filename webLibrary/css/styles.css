@@ -78,10 +78,18 @@ header input[type=search] {
     height: auto;
 }
 
-h1 {
-    font-size: 3.5rem;
+/* h1 {
+    font-size: 2.5rem;
     margin: 50px;
-}
+} */
+
+/* @media screen and (max-width: 768px) {
+    h1{
+        font-size: 1rem;
+        margin: 10px;
+    }
+    
+} */
 
 section {
     padding: 20px;
@@ -127,6 +135,8 @@ img {
     display: inline-block;
     width: 30%;
 } */
+
+
 
 .spotifyEmbedded iframe {
     width: 20%;
@@ -314,6 +324,11 @@ footer img {
 footer p {
     height: 70px;
     display: inline;
+}
+
+.aboutIframe{
+    width: 100%;
+    height: 320px;
 }
 
 .spotifyIframe {
