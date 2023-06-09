@@ -1,0 +1,3 @@
+
+en powershell como administrador
+Set-ExecutionPolicy Unrestricted
